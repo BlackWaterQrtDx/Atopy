@@ -4,7 +4,7 @@ from Atopy import Atopy
 class Main(Atopy):
 	def __init__(self):
 		print('[INIT] Main')
-		super().__init__(__file__, wdebug = True)
+		super().__init__(__file__, wdebug = False)
 
 	def startExample(self):
 		self.listModules()
@@ -16,10 +16,9 @@ class Main(Atopy):
 Main().startExample()
 
 ##########
-#	OR   #
+print("\n[OR]","="*20, "[OR]")
 ##########
 
-print("\n[OR]","="*20, "[OR]")
 autoloader = Atopy(__file__)
 autoloader.listModules()
 

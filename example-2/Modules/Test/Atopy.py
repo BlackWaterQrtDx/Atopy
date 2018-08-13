@@ -79,15 +79,11 @@ class Atopy(object):
 		return None
 
 	def listModules(self):
-		print('\n***********************')
-		print(' ' * int((len('***********************') / 2) - len('MODULE LIST') / 2 - 1), end=" ")
+		print('\n***********************\n', ' ' * int((len('***********************') / 2) - len('MODULE LIST') / 2 - 1), end="")
 		print('MODULE LIST')
 		print('***********************')
 		for mod in self.mobjects:
-			print('[*] ', end="")
-			print(mod, end="")
-			print(' ==> ', end="")
-			print(self.mobjects[mod])
+			print('[*]', mod, '==>', self.mobjects[mod])
 		print('***********************\n')
 
 	def getImportPath(self, file):
