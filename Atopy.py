@@ -105,4 +105,4 @@ class Atopy(object):
 		return os.path.isfile(file) and not file.startswith(__file__.split('\\')[-1]) and file.endswith('.py') and not file.startswith('__') and not file.endswith('__.py')
 
 	def isValidDir(self, cdir):
-		return os.path.isdir(cdir) and not cdir.startswith('__') and not cdir.endswith('__') and not cdir.startswith('.')
+		return os.path.isdir(cdir) and not cdir.startswith('__') and not cdir.endswith('__') and not '.' in cdir
