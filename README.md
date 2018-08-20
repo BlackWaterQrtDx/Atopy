@@ -1,12 +1,12 @@
 # Atopy
-## This is an Python Autoloader
+## This is an Python Dynamic Importer
 
 
 To use this object, place this file anywhere in your project and call the Atopy class directly or inherit it from your main class, and then call its <__init__> method.
 
 You can also call the Atopy class without inheriting it.
 
-For a "custom" autoloading, create the <__export__> function in your .py files and have it return what you want.
+For a "custom" import, create the <__export__> function in your .py files and have it return what you want.
 
 Atopy Methods:
 
